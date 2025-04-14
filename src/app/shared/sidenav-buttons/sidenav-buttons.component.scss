@@ -1,0 +1,50 @@
+.desktop-buttons {
+  display: none;
+}
+.desktop-buttons button{
+  color: white;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.desktop-buttons button svg{
+margin-right: 1px;
+}
+.desktop-buttons mat-icon {
+  display: none;
+}
+.desktop-buttons mat-icon {
+  display: inline-flex;
+  margin-right: 4px;
+}
+
+.desktop-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.desktop-buttons mat-icon {
+  display: inline-flex;
+  margin-right: 4px;
+}
+
+@media (min-width: 768px) {
+  .desktop-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+  }
+}
+
+
+@media (min-width: 768px) {
+  .desktop-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+  }
+}

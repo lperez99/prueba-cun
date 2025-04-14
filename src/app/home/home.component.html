@@ -1,0 +1,57 @@
+<!-- home.component.html -->
+<mat-card class="home-card">
+  <div class="breadscrumb">
+    <app-breadscrumb></app-breadscrumb>
+  </div>
+
+  <div class="principal-image">
+    <app-principal-image></app-principal-image>
+  </div>
+
+
+  <div class="cards-wrapper">
+    <h1 class="custom-title">Aenean facilisis, enim eu bibendum sagittis</h1>
+    <div class="home-cards-wrapper">
+      <div *ngFor="let card of cardsShadow" class="card-item">
+        <app-image-shadow [title]="card.title" [description]="card.description" [buttonText]="card.buttonText"
+          [imageUrl]="card.imageUrl"></app-image-shadow>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards-info">
+    <h1 class="custom-title-info">Aenean facilisis, enim eu bibendum sagittis</h1>
+    <div class="home-cards-info">
+      <div *ngFor="let card of infoCards" class="card-info">
+        <app-info-card [title]="card.title" [description]="card.description" [buttonText]="card.buttonText"
+          [icon]="card.icon">
+        </app-info-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="metal-image">
+    <app-metal-image></app-metal-image>
+  </div>
+
+  <div class="goals-card">
+    <app-goals>
+    </app-goals>
+  </div>
+
+  <div class="slider">
+    <app-slide></app-slide>
+  </div>
+
+  <div class="accordion">
+    <app-accordion></app-accordion>
+  </div>
+  <div class="form">
+    <app-form></app-form>
+  </div>
+
+  <div class="footer">
+    <!-- <app-footer></app-footer> -->
+  </div>
+
+</mat-card>

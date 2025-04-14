@@ -1,0 +1,61 @@
+.image-card {
+  background-image: url('../../assets/images/metalRectangle.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  padding: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.overlay-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-content button {
+  background: #F7941D;
+}
+
+.overlay-content h3 {
+  font-size: xx-large;
+  width: 40%;
+  line-height: 1;
+}
+
+.overlay-content h5,
+h3 {
+  text-align: center;
+}
+
+.overlay-content button {
+  align-self: center;
+}
+
+.overlay-content h5 {
+  width: 60%;
+}
+
+/* pequeñas */
+@media (max-width: 767px) {
+  .image-card {}
+
+}
+
+/*tablets en adelante*/
+@media (min-width: 768px) and (max-width: 1200px) {}
+
+/*desktop*/
+@media (min-width: 1201px) and (max-width: 1883px) {
+  .image-card {
+    min-height: 300px;
+  }
+}

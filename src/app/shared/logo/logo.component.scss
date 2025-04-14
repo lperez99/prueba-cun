@@ -1,0 +1,19 @@
+/* logo.component.scss */
+
+.logo-mobile {
+  display: none;
+}
+
+.logo-desktop {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .logo-mobile {
+    display: block;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+}

@@ -1,0 +1,66 @@
+@use '@angular/material' as mat;
+
+$color-azul-noche: #0B1F3A;
+$color-naranja: #F7941D;
+$color-blanco: #FFFFFF;
+$color-gris-claro: #F5F5F5;
+$color-gris-oscuro: #4A4A4A;
+
+$my-primary: mat.define-palette((
+  50: #e1e6ec,
+  100: #b3bccf,
+  200: #8090b0,
+  300: #4d6490,
+  400: #274476,
+  500: #0B1F3A,
+  600: #0A1C34,
+  700: #08182c,
+  800: #061425,
+  900: #030c17,
+  contrast: (
+    50: $color-azul-noche,
+    100: $color-azul-noche,
+    200: $color-azul-noche,
+    300: $color-blanco,
+    400: $color-blanco,
+    500: $color-blanco,
+    600: $color-blanco,
+    700: $color-blanco,
+    800: $color-blanco,
+    900: $color-blanco,
+  )
+), 500);
+
+
+$my-accent: mat.define-palette((
+  100: #ffe0b2,
+  200: #ffb74d,
+  400: #ffa726,
+  500: #F7941D,
+  600: #ef6c00,
+  700: #e65100,
+  contrast: (
+    100: $color-azul-noche,
+    200: $color-azul-noche,
+    400: $color-azul-noche,
+    500: $color-azul-noche,
+    600: $color-blanco,
+    700: $color-blanco,
+  )
+), 500);
+
+
+$my-warn: mat.define-palette(mat.$red-palette);
+
+
+$my-theme: mat.define-light-theme((
+  color: (
+    primary: $my-primary,
+    accent: $my-accent,
+    warn: $my-warn,
+  ),
+  typography: mat.define-typography-config(), // tipografía por defecto
+));
+
+
+@include mat.all-component-themes($my-theme);

@@ -1,0 +1,36 @@
+.principal-card {
+  border-radius: 12px;
+  border: 1px solid white;
+  background: #0B1F3A;
+  color: #FFFF;
+  margin: 5px;
+  padding: 20px;
+
+}
+
+.principal-card button {
+  background-color: rgba(16, 48, 86);
+  color: #fff;
+  height: 30px;
+  width: 150px;
+  font-weight: 200;
+  display: block;
+  margin-left: 0px;
+  justify-content: start;
+  text-align: left;
+}
+
+.circle {
+  background-color: #F7941D;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+}
+
+.principal-card h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}

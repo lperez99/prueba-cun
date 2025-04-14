@@ -1,0 +1,42 @@
+.footer-top {
+  background-color: #072b5b;
+  color: white;
+  padding: 30px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.social-icons button {
+  color: white;
+  margin-right: 5px;
+}
+
+.footer-bottom {
+  background-color: #efefef;
+  color: black;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.spacer {
+  flex: 1;
+}

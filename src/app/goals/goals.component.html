@@ -1,0 +1,16 @@
+<div class="principal-card">
+
+  <div class="first-component">
+    <h3>Lorem ipsum: dolor sit amet</h3>
+    <h5>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere blandit quam, himenaeos eros nunc tempus nisi
+      volutpat integer odio vel, dapibus vitae taciti mus metus tincidunt eu vestibulum nullam.</h5>
+    <img src="assets/images/goals.png" alt="Ejemplo" width="300" class="image-example" />
+  </div>
+
+  <div class="second-component">
+    <div *ngFor="let card of goalsCards" class="card-goals">
+      <app-goals-cards [title]="card.title" [description]="card.description" [icon]="card.icon"></app-goals-cards>
+    </div>
+  </div>
+
+</div>

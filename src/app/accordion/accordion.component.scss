@@ -1,0 +1,112 @@
+mat-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.faq-title {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+mat-expansion-panel {
+  border: 1px solid white;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+
+  ::ng-deep .mat-expansion-panel.mat-expanded {
+    box-shadow: none !important;
+  }
+
+  &.expanded {
+    ::ng-deep .mat-expansion-panel-header {
+      background-color: #9aa8bd !important;
+    }
+
+    .faq-question {
+      color: white;
+    }
+
+
+  }
+
+  ::ng-deep .mat-expansion-panel-header {
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #112d56;
+    transition: background-color 0.3s ease;
+  }
+
+  ::ng-deep .mat-expansion-indicator::after {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    color: rgba(16, 48, 86, 0.7);
+  }
+
+  &.mat-expanded ::ng-deep .mat-expansion-indicator::after {
+    transform: rotate(180deg);
+  }
+
+}
+
+.faq-question {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: white;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  background-color: white;
+  color: #333;
+  padding: 24px;
+  border: 1px solid #112d56;
+
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  mat-accordion {
+    width: 95%;
+  }
+
+  mat-expansion-panel {
+    ::ng-deep .mat-expansion-panel-header {
+      padding: 16px;
+      font-size: 1.1rem;
+    }
+
+    .faq-answer {
+      padding: 16px;
+      font-size: 0.95rem;
+    }
+  }
+}
+
+::ng-deep .mat-expansion-panel,
+::ng-deep .mat-expansion-panel.mat-expanded,
+::ng-deep .mat-expansion-panel:not(.mat-expanded),
+::ng-deep .mat-expansion-panel:not([aria-disabled="true"]) {
+  box-shadow: none !important;
+}
+
+::ng-deep .mat-expansion-panel-header {
+
+  background-color: rgba(16, 48, 86, 0.7);
+
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: rgba(16, 48, 86, 0.7) !important;
+  }
+}

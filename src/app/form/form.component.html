@@ -1,0 +1,50 @@
+<div class="form-container">
+  <div class="image-section">
+    <app-student></app-student>
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="send()" class="form-section">
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p>
+      Aliquam vulputate magna in viverra mattis. Aliquam volutpat dui fringilla leo posuere, sed facilisis tortor consequat.
+    </p>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Tipo de documento</mat-label>
+      <mat-select formControlName="documentType">
+        <mat-option *ngFor="let tipo of documentType" [value]="tipo">{{ tipo }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Número de documento</mat-label>
+      <input matInput formControlName="documentNumber" placeholder="Ingresa tu número de documento..." />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Nombre completo</mat-label>
+      <input matInput formControlName="name" placeholder="Ingresa tu nombre completo..." />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Correo electrónico</mat-label>
+      <input matInput formControlName="email" placeholder="Ingresa tu correo electrónico..." />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width phone">
+      <mat-label>Número celular</mat-label>
+      <span matPrefix class="prefix">+57 &nbsp;</span>
+      <input matInput formControlName="phone" placeholder="000 000 000" />
+    </mat-form-field>
+
+    <mat-checkbox formControlName="aceptTerms">
+      Al enviar, aceptas los
+      <a href="#" target="_blank">Términos y condiciones</a> y la
+      <a href="#" target="_blank">Política de manejo de datos</a>.
+    </mat-checkbox>
+
+    <button mat-raised-button color="primary" class="submit-button" type="submit">
+      Click Here <mat-icon>open_in_new</mat-icon>
+    </button>
+  </form>
+</div>

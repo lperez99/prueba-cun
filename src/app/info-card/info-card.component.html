@@ -1,0 +1,13 @@
+<mat-card class="principal-card">
+  <div class="circle" *ngIf="icon">
+    <ng-container *ngComponentOutlet="icon"></ng-container>
+  </div>
+  <h3>{{title}}</h3>
+  <h5>{{description}}</h5>
+  <button mat-flat-button>
+    <app-row></app-row>
+    {{ buttonText }}
+
+  </button>
+
+</mat-card>

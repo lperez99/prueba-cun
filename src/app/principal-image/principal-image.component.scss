@@ -1,0 +1,75 @@
+.image-card {
+  background-image: url('../../assets/images/principal.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  padding: 24px;
+  border-radius: 8px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.image-card mat-card-title,
+.image-card mat-card-subtitle,
+.image-card p,
+.image-card button {
+  position: relative;
+  z-index: 1;
+}
+
+.image-card mat-card-subtitle,
+.image-card p,
+.image-card button {
+  font-weight: lighter;
+}
+
+.image-card mat-card-subtitle {
+  color: white;
+  font-size: 0.70rem;
+  font-weight: 100;
+}
+
+.image-card mat-card-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* pequeñas */
+@media (max-width: 767px) {
+  .image-card button {
+    width: 100%;
+  }
+
+  .image-card p {
+    width: 100%;
+  }
+}
+/*tablets en adelante*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  .image-card button {
+    width: 60%;
+  }
+
+  .image-card p {
+    width: 50%;
+  }
+}
+/*desktop*/
+@media (min-width: 1201px) and (max-width: 1883px) {
+  .image-card button {
+    width: 40%;
+  }
+
+  .image-card p {
+    width: 40%;
+  }
+
+  .image-card mat-card-title {
+    font-size: 1.8rem;
+  }
+}

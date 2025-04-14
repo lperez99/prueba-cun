@@ -1,0 +1,30 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  padding: 1rem;
+  background-color: #f9f9f9;
+
+  .icon {
+    color: gray;
+    margin-right: 4px;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: gray;
+
+    &.active {
+      color: #0a2342;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+
+  .divider {
+    margin: 0 8px;
+    color: gray;
+  }
+}

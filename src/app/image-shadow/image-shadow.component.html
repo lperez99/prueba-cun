@@ -1,0 +1,14 @@
+<mat-card class="image-card" [ngStyle]="{ 'background-image': 'url(' + imageUrl + ')' }">
+
+  <div class="overlay-content">
+    <h3>{{ title }}</h3>
+    <h5>{{ description }}</h5>
+
+    <button mat-flat-button>
+      {{ buttonText }}
+      <app-row></app-row>
+    </button>
+
+  </div>
+
+</mat-card>

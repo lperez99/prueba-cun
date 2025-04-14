@@ -1,0 +1,21 @@
+<div class="faq-container">
+  <h2 class="faq-title">Lorem ipsum dolor sit amet</h2>
+
+  <mat-accordion >
+    <mat-expansion-panel
+      *ngFor="let item of faqItems; let i = index"
+      (opened)="panelStates[i] = true"
+      (closed)="panelStates[i] = false"
+      [ngClass]="{ expanded: panelStates[i] }"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title class="faq-question">
+          {{ item.question }}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="faq-answer">
+        {{ item.answer }}
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
